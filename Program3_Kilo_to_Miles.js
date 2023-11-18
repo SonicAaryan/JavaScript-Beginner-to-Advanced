@@ -3,4 +3,4 @@ const PROMPT = require('prompt-sync')()
 let kilometers, miles;
 kilometers = PROMPT("Enter the Kilometers to Convert into Miles :");
 miles = (kilometers * 0.621371);
-console.log(`${kilometers} KM is equal to ${miles} MI`);
+console.log(`${kilometers} KM is equal to ${miles} miles`);

@@ -1,12 +1,12 @@
 const PROMPT = require('prompt-sync')()
 const row = parseInt(PROMPT("Enter the Value :"));
-for (let i = 1; i <= row; i++) {
+for (let outerLoop = 1; outerLoop <= row; outerLoop++) {
     let pattern = '';
 
-    for (let j = row; j > i; j--) {
+    for (let emptySpaces = row; emptySpaces > outerLoop; emptySpaces--) {
         pattern += ' ';
     }
-    for (let k = 1; k <= i; k++) {
+    for (let patternLoop = 1; patternLoop <= outerLoop; patternLoop++) {
         pattern += '*';
     }
     console.log(pattern);

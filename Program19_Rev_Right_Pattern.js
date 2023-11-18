@@ -1,9 +1,9 @@
 const PROMPT = require('prompt-sync')()
-let num = parseInt(PROMPT("Enter the Number :"));
-for (let i = num; i >= 1; i--) {
+let inputNum = parseInt(PROMPT("Enter the Number :"));
+for (let outerLoop = inputNum; outerLoop >= 1; outerLoop--) {
     let numPattern = '';
-    for (let j = 1; j <= i; j++) {
-        numPattern += j + ' ';
+    for (let innerLoop = 1; innerLoop <= outerLoop; innerLoop++) {
+        numPattern += innerLoop + ' ';
     }
     console.log(numPattern);
 }

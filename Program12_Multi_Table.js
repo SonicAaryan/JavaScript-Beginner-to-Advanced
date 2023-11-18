@@ -1,9 +1,9 @@
 const PROMPT = require('prompt-sync')()
-let number = PROMPT("Enter the Number of which you want the Multiplication Table :")
+let inputNum = PROMPT("Enter the Number of which you want the Multiplication Table :")
 let multipliedValue = '0';
 for (let i = 1; i <= 10; i++) {
-    multipliedValue = number * i;
-    console.log(`${number} * ${i} = ${multipliedValue} `);
+    multipliedValue = inputNum * i;
+    console.log(`${inputNum} * ${i} = ${multipliedValue} `);
 }
 console.log(typeof multipliedValue);
 // Here '5'* 5 = 25 ( Means String is Multipliying with Value and o/p is In Number )

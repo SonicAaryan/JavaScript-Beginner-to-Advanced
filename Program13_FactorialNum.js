@@ -1,9 +1,9 @@
 const PROMPT = require('prompt-sync')()
-var num =PROMPT("Enter the Number to Calculate Facotial :");
+var inputNum = PROMPT("Enter the Number to Calculate Facotial :");
 var fact = 1;
-var i = 1;
-while (i <= num) {
-    fact *= i;
-    i++;
+var iteration = 1;
+while (iteration <= inputNum) {
+    fact *= iteration;
+    iteration++;
 }
-console.log(`Factorial of Number ${num} is : ${fact}`);
+console.log(`Factorial of Number ${inputNum} is : ${fact}`);

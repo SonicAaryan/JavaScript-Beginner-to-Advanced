@@ -1,11 +1,12 @@
-// Write a Program that checks if a Number is Odd or Even
+// Write numToCheckOddEven Program that checks if numToCheckOddEven Number is Odd or Even
 const PROMPT = require('prompt-sync')()
-//let a = PROMPT("Enter the Value to check for Odd or Even :");
-let b = PROMPT("Enter the Value to check for Odd or Even :");
-for (let a = 1; a <= b; a++) {
-    if ((a % 2) == 1) {
-        console.log(`ODD Number : ${a}`);
-    } else if (a % 2 == 0) {
-        console.log(`EVEN Number : ${a}`);
+
+//let numToCheckOddEven = PROMPT("Enter the Value to check for Odd or Even :");
+let inputValue = PROMPT("Enter the Value to check for Odd or Even :");
+for (let numToCheckOddEven = 1; numToCheckOddEven <= inputValue; numToCheckOddEven++) {
+    if ((numToCheckOddEven % 2) == 1) {
+        console.log(`ODD Number : ${numToCheckOddEven}`);
+    } else if (numToCheckOddEven % 2 == 0) {
+        console.log(`EVEN Number : ${numToCheckOddEven}`);
     }
 }
