@@ -1,15 +1,15 @@
 const PROMPT = require('prompt-sync')()
 let row = parseInt(PROMPT("Enter the Number :"));
-for (let rowIndex = 1; rowIndex <= row; rowIndex++) {
+for (let i = 1; i <= row; i++) {
     let pattern = '';
-    for (let blankSpaces = 1; blankSpaces <= row - rowIndex; blankSpaces++) {
+    for (let j = 1; j <= row - i; j++) {
         pattern += '  ';
     }
-    for (let k = 1; k <= rowIndex * 2 - 1; k++) {
+    for (let k = 1; k <= i; k++) {
         pattern += '*' + ' ';
     }
-    // for (let l = 2; l <= rowIndex; l++) {
-    //     pattern += '*' + ' ';
-    // }
+    for (let l = 2; l <= i; l++) {
+        pattern += '*' + ' ';
+    }
     console.log(pattern);
 }
