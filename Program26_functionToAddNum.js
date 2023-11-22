@@ -24,7 +24,7 @@ function addGivenNumbers() {
     }
     console.log(sum);
 }
-addGivenNumbers(1, 4, 5, 6, 8, 9, 10);
+addGivenNumbers(1, 4, 5, 8, 1, 2);
 // let length = parseInt(PROMPT("Enter the Length for to Add Digits :"));
 // for (let i = 0; i < length; i++) {
 //     addGivenNumbers(i) = +PROMPT("Enter the Number");
