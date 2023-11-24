@@ -1,13 +1,14 @@
 function objectCheck(empDetails) {
-    //(empDetails == Boolean({})) ? console.log('True , Object is Empty') : console.log('false , Object is Not Empty');
     for (let a in empDetails) {
-        if (a == null) {
-            console.log(true);
+        if ((Object.keys(a))) {
+            console.log("False");
+            return;
         }
     }
+    console.log('True');
 }
 const empDetails = {
-
+    // id: 1,
+    // empName: "ABC"
 }
 objectCheck(empDetails);
-// console.log(typeof empDetails);
