@@ -7,7 +7,7 @@ let multiplyNumericValues = (roomDetails) => {
     for (const key in roomDetails) {
         if (typeof roomDetails[key] === 'number') {
             console.log('roomDetails :', roomDetails[key], 'typeof roomDetails[key] :', typeof roomDetails[key]);
-            roomDetails[key] = roomDetails[key] * 2;
+            roomDetails[key] = roomDetails[key] * 2; // Performing operation and storing into it.
         }
     }
     console.log('after modification :', roomDetails);
