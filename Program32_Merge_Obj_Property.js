@@ -7,7 +7,9 @@ const marksList2 = {
     "Asia": 77.6
 }
 function mergedObjectProperty(marksList1, marksList2) {
-    return marksList1marksList2
+    return marksList1, marksList2;
 }
-const mergedTwoObjProperty = mergedObjectProperty(marksList1, marksList2);
-console.log(mergedObjectProperty);
+let mergedTwoObjProperty = mergedObjectProperty(marksList1, marksList2);
+for (let key in mergedTwoObjProperty) {
+    console.log("The Student is :", key, "and has got :", mergedTwoObjProperty[key]);
+}
