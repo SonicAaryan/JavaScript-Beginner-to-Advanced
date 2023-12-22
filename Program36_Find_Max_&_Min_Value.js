@@ -7,11 +7,10 @@ for (let arrayIndex = 0; arrayIndex < length; arrayIndex++) {
 console.log("The Element in the Array are :", intArray);
 let Maximum = (intArray) => {
     let firstElement = intArray[0];
-    for (let arrayIndex = 0; arrayIndex < intArray.length; arrayIndex++) {
+    for (let arrayIndex = 1; arrayIndex < intArray.length; arrayIndex++) {
         if (firstElement < intArray[arrayIndex]) {
             firstElement = intArray[arrayIndex];
         }
-       // console.log("The FIRST ELEMENT :", firstElement);
     }
     console.log("The Maximum Value is :", firstElement);
 }
@@ -22,12 +21,9 @@ let Minimum = (intArray) => {
     for (let arrayIndex = 1; arrayIndex < intArray.length; arrayIndex++) {
         if (firstElement > intArray[arrayIndex]) {
             firstElement = intArray[arrayIndex];
-            console.log("-----", firstElement);
         }
     }
     console.log("The Minimum Value is:", firstElement);
 }
 Minimum(intArray);
-
-
-// Arrow Function doesnt Host
+// Arrow Function doesnt Host means we cannot cll it from above the function
