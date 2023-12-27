@@ -1,3 +1,4 @@
+// [1,2,1,2,4,5]
 const PROMPT = require('prompt-sync')()
 let length = parseInt(PROMPT("Enter the Length for the Array :"));
 let numArray = [length];
@@ -7,12 +8,14 @@ for (let arrayElementAccept = 0; arrayElementAccept < length; arrayElementAccept
 removeDuplicateValues(numArray);
 function removeDuplicateValues(numArray) {
     let newArray = [];
-    for (let iterationOne of numArray) {
-        for (let iterationSecond of numArray) {
-            if (iterationOne != iterationSecond) {
-                newArray.push(iterationSecond)
+    let indexPlus = 1;
+    for (let iterationOne = 0; iterationOne < length; iterationOne++) {
+        for (let iterationSecond = indexPlus; iterationSecond < length; iterationSecond++) {
+            if (numArray[iterationOne] == numArray[iterationSecond]) {
+                newArray = numArray.pop(numArray[iterationOne])
             }
         }
+        indexPlus++;
     }
-    console.log(newArray);
+    console.log(numArray);
 }
