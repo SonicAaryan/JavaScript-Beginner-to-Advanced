@@ -1,4 +1,5 @@
-// function isEmpty(empDetails) {
+// Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
+// function isEmptyObj(empDetails) {
 //     for (let key in empDetails) {
 //         console.log('Object :', Object.keys(empDetails)); //  here it will print 'id' bcz it is the key.
 //         // and if we print Object,keys(key) then output will be '0','1' bcz String & Number String From 0 index.

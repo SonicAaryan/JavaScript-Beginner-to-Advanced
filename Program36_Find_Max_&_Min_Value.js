@@ -1,3 +1,7 @@
+/*
+Find the Maximum and Minimum:
+Create a function that finds the maximum and minimum values in an array without using any built-in methods
+*/
 const PROMPT = require('prompt-sync')()
 let length = PROMPT("Enter the Length Value :");
 let intArray = [length];

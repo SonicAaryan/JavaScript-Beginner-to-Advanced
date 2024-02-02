@@ -1,3 +1,11 @@
+/* 
+Write a program to print a Right Triangle Pattern of asterisks.
+    *
+   **
+  ***
+ ****
+*****
+*/
 const PROMPT = require('prompt-sync')()
 const row = parseInt(PROMPT("Enter the Value :"));
 for (let outerLoop = 1; outerLoop <= row; outerLoop++) {

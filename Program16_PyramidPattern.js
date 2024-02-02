@@ -1,3 +1,11 @@
+/* 
+Write a program to print a Pyramid Triangle Pattern of asterisks.
+    *
+   ***
+  *****
+ *******
+*********
+*/
 const PROMPT = require('prompt-sync')()
 let row = parseInt(PROMPT("Enter the Number :"));
 console.time("ForLoop Time");

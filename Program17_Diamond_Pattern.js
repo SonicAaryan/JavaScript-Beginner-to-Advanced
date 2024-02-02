@@ -1,3 +1,11 @@
+/*
+Write a program to print a diamond pattern of asterisks.
+   *
+  ***
+ *****
+  ***
+   *
+*/
 const PROMPT = require('prompt-sync')()
 let row = +PROMPT("Enter the Number Which will work on rows to Print Star : ");
 for (let outerLoop = 1; outerLoop <= row; outerLoop++) {

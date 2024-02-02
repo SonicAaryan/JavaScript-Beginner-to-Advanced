@@ -1,3 +1,4 @@
+// Write a program to merge properties of two objects
 const marksList1 = {
     "Alice": 77.0,
     "Brian": 86.7

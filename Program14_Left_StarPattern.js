@@ -1,3 +1,10 @@
+/*
+Write a program to print a Left Triangle Pattern of asterisks.
+*
+**
+***
+****
+*/
 const PROMPT = require('prompt-sync')()
 let row = PROMPT("Enter the Value to print Left Triangle :");
 let pattern = '';

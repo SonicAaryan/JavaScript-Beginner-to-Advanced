@@ -1,3 +1,13 @@
+/* 
+Write a JavaScript program to check three given numbers, if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40.
+e.g.
+1. Input - 8, 8, 8
+Output - 30
+2. Input - 8, 8, 18
+Output - 40
+3. Input - 8, 7, 18
+Output - 20
+*/
 const PROMPT = require('prompt-sync')()
 let value1 = +PROMPT("Enter 1st Value :");
 let value2 = +PROMPT("Enter 2nd Value :");

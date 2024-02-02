@@ -1,4 +1,7 @@
-// Write value1 program to swap two variables without using value1 temporary variable.
+/* Write a program to swap two variables without using a temporary variable
+Input: a=5,  b=10
+Output: b=5,  a=10
+*/
 const PROMPT = require('prompt-sync')()
 let value1 = parseInt(PROMPT("Enter the Value to Swap :"));
 let value2 = parseInt(PROMPT("Enter Another Value to Swap :"));

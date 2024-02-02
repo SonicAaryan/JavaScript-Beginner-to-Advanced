@@ -1,3 +1,9 @@
+/*
+Write a function to check if a number is Prime
+1] Input - 27   => Output- false
+
+2] Input - 19  => Output- true
+*/
 function identifyPrimeNum(num) {
     let temp = 0;
     let condition = Math.floor(num / 2);

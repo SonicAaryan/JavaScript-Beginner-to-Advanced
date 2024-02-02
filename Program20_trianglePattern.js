@@ -1,3 +1,10 @@
+/*
+Write a program to print a triangle pattern as follows - 
+    1
+   232
+  34543
+ 4567654
+*/
 const PROMPT = require('prompt-sync')()
 let row = +PROMPT("Enter the Value to Print Triangle Pattern :");
 for (let outerLoop = 1; outerLoop <= row; outerLoop++) {

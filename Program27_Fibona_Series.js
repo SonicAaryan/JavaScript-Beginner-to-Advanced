@@ -1,3 +1,10 @@
+/*
+Create a function to generate the first N terms of the Fibonacci sequence.
+FYI: 
+Fibonacci series or sequence starts with two numbers 0 and 1, and next number is obtained by adding two numbers before it. For example, third term 1 is found by adding 0 and 1, fourth term 2 is then obtained by third term 1 and second term 1.
+e.g.
+0, 1, 1, 2, 3, 5, 8, 13, 21 and so on
+*/
 let fibo = (lengthForLoop) => {
     let f0 = 0, f1 = 1, next = 0;
     console.log(f0);

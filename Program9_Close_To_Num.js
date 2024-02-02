@@ -1,3 +1,10 @@
+/* Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+e.g.
+1. Input - 90, 89
+Output - 90
+2. Input -         -90, -89
+Output - -89
+*/
 const PROMPT = require('prompt-sync')()
 let value = 100;
 let num1 = parseInt(PROMPT("Enter the 1st Value, which is not Greater than 100 :"));

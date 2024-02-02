@@ -1,3 +1,9 @@
+/*
+Write a function to reverse a number without using any inbuilt function/method.
+e.g.
+Input - 12345
+Output - 54321
+*/
 function reverseNumber(value) {
     let reverseNumber = '';
     while (value > 0) {

@@ -1,3 +1,11 @@
+/*
+Write a JavaScript program to check if the number 5 present in a given array of numbers
+e.g.
+1. Input - [5, 4, 3, 100, 9]
+Output - true
+2. Input - [22, -1, 60, 0]
+Output - false
+*/
 const PROMPT = require('prompt-sync')()
 let length = PROMPT("Enter the Length for Array :");
 let intArray = [length];
