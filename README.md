@@ -8,4 +8,4 @@ To use the code provided in this repository, simply follow these steps:
 
 1. Clone this repository to your local machine using Git:
    ```bash
-   git clone https://github.com/your_username/javascript-code.git
+   git clone https://github.com/SonicAaryan/JavaScript-Beginner-to-Advanced.git
