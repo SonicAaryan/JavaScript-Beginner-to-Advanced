@@ -1,14 +1,15 @@
 let body = document.getElementById('body');
 let div = document.getElementById('container');
 let box = document.getElementById('whitebox');
-let p = document.getElementById('p');
+let para = document.getElementById('para');
 
 let start = document.getElementById('start');
 let pause = document.getElementById('stop');
 let restart = document.getElementById('restart');
 
 
-let temp;
+// let temp;
+let id;
 let seconds = 0;
 let hours = 0;
 let minute = 0;
@@ -30,31 +31,39 @@ let timer = () => {
 
     }
 };
-let flag = false;
+// let flag = false;
+
+//TODO:Two Logic Implemented
+
 start.addEventListener('click', function () {
-    if (flag == false) {
-        let id = setInterval(function () {
-            p.innerHTML = timer();
-            if (temp == 'pause') {
-                console.log('IN IF');
-                clearInterval(id);
-                flag = false;
-                temp = '';
-            }
-        }, 1000);
-    }
-    flag = true
+    // if (flag == false) {
+    id = setInterval(function () {
+        para.innerHTML = timer();
+        // if (temp == 'pause') {
+        //     console.log('IN IF');
+        //     clearInterval(id);
+        //     flag = false;
+        //     temp = '';
+        // }
+
+    }, 1000);
+    // }
+    // flag = true
     // console.log(flag, "True");
 });
 
 restart.addEventListener('click', function () {
-    let restart = p.innerHTML = "00:00:00"
-    clearInInterval(restart);
+    para.innerHTML = "00:00:00"
+    clearInterval(id);
+    seconds = 0;
+    minute = 0;
+    hours = 0;
 
 });
 
 pause.addEventListener('click', function () {
     // clearInInterval();
-    temp = 'pause';
+    // temp = 'pause';
+    clearInterval(id);
 });
 
